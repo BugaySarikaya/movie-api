@@ -1,0 +1,36 @@
+{
+  "name": "movieApi",
+  "version": "1.0.0",
+  "description": "NodeJs Movie API\r Rest API",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "express": "~4.17.1",
+    "jade": "~1.11.0",
+    "mongoose": "^5.7.14",
+    "morgan": "~1.9.1",
+    "serve-favicon": "~2.5.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint": "^6.7.2"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BugaySarikaya/movie-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BugaySarikaya/movie-api/issues"
+  },
+  "homepage": "https://github.com/BugaySarikaya/movie-api#readme"
+}
