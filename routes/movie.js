@@ -13,6 +13,27 @@ router.get('/', (req, res) => {
   })
 });
 
+router.get('/getAll', (req, res) => {
+  const promise = Movie.aggregate(
+    {
+      $lookup: {
+        form: 'directors',
+        localField: 'director_id',
+        foreignField: '_id',
+        as: 'director'
+      },
+      {
+        $unwind: '$director'
+      }
+    }
+  );
+  promise.then( (data)=> {
+    res.json(data);
+  }).catch((err) => {
+    res.json(err);
+  })
+});
+
 router.get('/:movie_id', (req, res, next) => {
   const promise = Movie.findById(req.params.movie_id);
   promise.then((data) => {
