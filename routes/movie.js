@@ -22,9 +22,7 @@ router.get('/getAll', (req, res) => {
         foreignField: '_id',
         as: 'director'
       },
-      {
-        $unwind: '$director'
-      }
+      $unwind: '$director'
     }
   );
   promise.then( (data)=> {

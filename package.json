@@ -4,11 +4,13 @@
   "description": "NodeJs Movie API\r Rest API",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "~1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~4.1.1",
     "express": "~4.17.1",
     "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.14",
     "morgan": "~1.9.1",
     "serve-favicon": "~2.5.0"
